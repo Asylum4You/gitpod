@@ -9,7 +9,7 @@ godebug tlsmlkem=0
 require (
 	github.com/alecthomas/jsonschema v0.0.0-20210526225647-edb03dcab7bc
 	github.com/containerd/containerd v1.6.36
-	github.com/docker/cli v25.0.1+incompatible
+	github.com/docker/cli v29.2.0+incompatible
 	github.com/docker/docker v28.0.2+incompatible
 	github.com/docker/docker-credential-helpers v0.7.0 // indirect
 	github.com/golang/mock v1.6.0
@@ -21,7 +21,7 @@ require (
 	github.com/opencontainers/image-spec v1.1.0
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/prometheus/client_golang v1.19.1
-	github.com/sirupsen/logrus v1.9.3
+	github.com/sirupsen/logrus v1.9.4
 	github.com/spf13/cobra v1.8.1
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2
 	google.golang.org/grpc v1.65.0
@@ -53,7 +53,7 @@ require (
 	github.com/prometheus/procfs v0.15.1 // indirect
 	github.com/slok/go-http-metrics v0.10.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
-	github.com/stretchr/testify v1.9.0 // indirect
+	github.com/stretchr/testify v1.10.0 // indirect
 	github.com/uber/jaeger-client-go v2.29.1+incompatible // indirect
 	github.com/uber/jaeger-lib v2.4.1+incompatible // indirect
 	go.uber.org/atomic v1.10.0 // indirect

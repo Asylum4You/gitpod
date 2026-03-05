@@ -9,14 +9,14 @@ godebug tlsmlkem=0
 require (
 	github.com/containerd/containerd v1.6.36
 	github.com/distribution/reference v0.5.0
-	github.com/docker/cli v25.0.1+incompatible
+	github.com/docker/cli v29.2.0+incompatible
 	github.com/gitpod-io/gitpod/common-go v0.0.0-00010101000000-000000000000
 	github.com/gitpod-io/gitpod/gitpod-protocol v0.0.0-00010101000000-000000000000
 	github.com/gitpod-io/gitpod/ide-service-api v0.0.0-00010101000000-000000000000
 	github.com/heptiolabs/healthcheck v0.0.0-20211123025425-613501dd5deb
 	github.com/opencontainers/image-spec v1.1.0
 	github.com/prometheus/client_golang v1.19.1
-	github.com/sirupsen/logrus v1.9.3
+	github.com/sirupsen/logrus v1.9.4
 	github.com/spf13/cobra v1.8.1
 	github.com/xeipuuv/gojsonschema v1.2.0
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2
@@ -60,7 +60,7 @@ require (
 	github.com/slok/go-http-metrics v0.10.0 // indirect
 	github.com/sourcegraph/jsonrpc2 v0.0.0-20200429184054-15c2290dcb37 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
-	github.com/stretchr/testify v1.9.0 // indirect
+	github.com/stretchr/testify v1.10.0 // indirect
 	github.com/uber/jaeger-client-go v2.29.1+incompatible // indirect
 	github.com/uber/jaeger-lib v2.4.1+incompatible // indirect
 	github.com/xeipuuv/gojsonpointer v0.0.0-20190905194746-02993c407bfb // indirect
