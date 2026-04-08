@@ -1,0 +1,325 @@
+# Instincts generated from https://github.com/Asylum4You/gitpod
+# Generated: 2026-04-08T19:39:13.079Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: gitpod-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Asylum4You/gitpod
+---
+
+# Gitpod Commit Length
+
+## Action
+
+Write moderate-length commit messages (~62 characters)
+
+## Evidence
+
+- Average commit message length: 62 chars
+- Based on 1 commits
+
+---
+id: gitpod-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Asylum4You/gitpod
+---
+
+# Gitpod Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: gitpod-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Asylum4You/gitpod
+---
+
+# Gitpod Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: gitpod-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Asylum4You/gitpod
+---
+
+# Gitpod Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: gitpod-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/Asylum4You/gitpod
+---
+
+# Gitpod Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: gitpod-workflow-go-module-dependency-bump
+trigger: "when doing go module dependency bump"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Asylum4You/gitpod
+---
+
+# Gitpod Workflow Go Module Dependency Bump
+
+## Action
+
+Follow the go-module-dependency-bump workflow:
+1. Identify outdated Go modules in each component/directory.
+2. Update the version of dependencies in go.mod files.
+3. Regenerate go.sum files to reflect the updated dependencies.
+4. Repeat for each affected component/directory.
+5. Commit all changed go.mod and go.sum files in a single commit.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: */go.mod, */go.sum, */*/go.mod
+
+---
+id: gitpod-instinct-file-naming-camelcase
+trigger: "When creating a new file in the repository"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Asylum4You/gitpod
+---
+
+# Gitpod Instinct File Naming Camelcase
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+
+---
+id: gitpod-instinct-function-naming-camelcase
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Asylum4You/gitpod
+---
+
+# Gitpod Instinct Function Naming Camelcase
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: gitpod-instinct-class-naming-pascalcase
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Asylum4You/gitpod
+---
+
+# Gitpod Instinct Class Naming Pascalcase
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: gitpod-instinct-constant-naming-screaming-snake-case
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Asylum4You/gitpod
+---
+
+# Gitpod Instinct Constant Naming Screaming Snake Case
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: gitpod-instinct-import-style-relative
+trigger: "When importing modules in TypeScript files"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Asylum4You/gitpod
+---
+
+# Gitpod Instinct Import Style Relative
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: gitpod-instinct-export-style-named
+trigger: "When exporting functions, classes, or constants"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Asylum4You/gitpod
+---
+
+# Gitpod Instinct Export Style Named
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: gitpod-instinct-test-location-separate
+trigger: "When adding or organizing test files"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: Asylum4You/gitpod
+---
+
+# Gitpod Instinct Test Location Separate
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: gitpod-instinct-commit-format-freeform
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: Asylum4You/gitpod
+---
+
+# Gitpod Instinct Commit Format Freeform
+
+## Action
+
+Use a freeform commit message without a required prefix
+
+## Evidence
+
+- Pattern in commits.type
+- Seen in commit: 'Bump the go_modules group across 56 directories with 8 updates'
+
+---
+id: gitpod-instinct-commit-length-moderate
+trigger: "When composing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: Asylum4You/gitpod
+---
+
+# Gitpod Instinct Commit Length Moderate
+
+## Action
+
+Keep the commit message concise, around 60 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength
+
+---
+id: gitpod-instinct-go-module-dependency-bump
+trigger: "When Go dependencies need to be updated across the monorepo (e.g., due to security, features, or maintenance)"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: Asylum4You/gitpod
+---
+
+# Gitpod Instinct Go Module Dependency Bump
+
+## Action
+
+Update all go.mod and go.sum files in affected directories, regenerate go.sum, and commit all changes in a single commit
+
+## Evidence
+
+- Workflow: go-module-dependency-bump
+- Example commit: 'Bump the go_modules group across 56 directories with 8 updates'
+- Pattern in workflow.filesInvolved
+
